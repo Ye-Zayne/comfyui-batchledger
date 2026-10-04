@@ -1,0 +1,4 @@
+[
+  {"id": "shot-001", "path": "batchledger_demo/a.png", "seed": 42, "prompt": "a portrait in soft daylight"},
+  {"id": "shot-002", "path": "batchledger_demo/b.png", "seed": 43, "prompt": "a landscape in soft daylight"}
+]

@@ -1,0 +1,26 @@
+{
+  "1": {
+    "class_type": "BatchLedgerPlan",
+    "inputs": {
+      "folder": "batchledger_demo",
+      "manifest": "",
+      "manifest_json": "",
+      "output_folder": "batchledger_demo",
+      "recursive": true,
+      "base_seed": 42,
+      "model_fingerprint": "no-model:ImageScale:v1",
+      "run_mode": "pending_and_invalid",
+      "max_retries": 1,
+      "auto_queue": true
+    }
+  },
+  "2": {"class_type": "BatchLedgerNext", "inputs": {"plan": ["1", 0]}},
+  "3": {
+    "class_type": "ImageScale",
+    "inputs": {"image": ["2", 0], "upscale_method": "lanczos", "width": 512, "height": 512, "crop": "disabled"}
+  },
+  "4": {
+    "class_type": "BatchLedgerVerifiedSave",
+    "inputs": {"item": ["2", 5], "images": ["3", 0], "expected_width": 512, "expected_height": 512}
+  }
+}

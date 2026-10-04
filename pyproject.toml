@@ -1,0 +1,21 @@
+[project]
+name = "comfyui-batchledger"
+version = "0.1.0"
+description = "Content-addressed image batch planning, verified saves, failure tracking and selective retry."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Ye-Zayne"}]
+dependencies = ["numpy>=1.24", "Pillow>=10"]
+
+[project.urls]
+Repository = "https://github.com/Ye-Zayne/comfyui-batchledger"
+"Bug Tracker" = "https://github.com/Ye-Zayne/comfyui-batchledger/issues"
+
+[tool.comfy]
+PublisherId = "jinny-wj"
+DisplayName = "BatchLedger"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+testpaths = ["tests"]
