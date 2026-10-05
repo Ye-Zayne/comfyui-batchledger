@@ -13,7 +13,7 @@ Repository = "https://github.com/Ye-Zayne/comfyui-batchledger"
 "Bug Tracker" = "https://github.com/Ye-Zayne/comfyui-batchledger/issues"
 
 [tool.comfy]
-PublisherId = "jinny-wj"
+PublisherId = "ye-zayne"
 DisplayName = "BatchLedger"
 
 [tool.pytest.ini_options]
